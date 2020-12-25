@@ -33,3 +33,7 @@ SELECT
 FROM cte_rownum AS cur
 INNER JOIN cte_rownum AS nxt ON nxt.rownum = cur.rownum + 1
 WHERE nxt.seqval - cur.seqval > 1
+
+
+/*Approach 2: Using Sub query method*/
+--will do this later once I get some time.
