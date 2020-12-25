@@ -28,4 +28,6 @@ from
 	inner join cte_rownum as nxt on cur.rownum+1 = nxt.rownum
 where
 	datediff(day,cur.date_seq,nxt.date_seq) > 1
+
+--Note: this will give us ouptput as start_range = 2020-12-18 and end_range = 2020-12-24
 	
